@@ -12,7 +12,7 @@
 @import "components/global";
 
 /*** Startup Variables ***/
-$section-dark-bg-color: #000 !default;
+$section-dark-bg-color: #373737 !default;
 $section-light-bg-color: desaturate($primary-color, 30%);
 
 @import "startup-components/devices";
@@ -31,12 +31,12 @@ body, html {
 
 body {
   &.light-theme {
-    background-color: #fff;
-    color: #444;
+    background-color: #F4F4F4;
+    color: #373737;
   }
 
   background-color: $section-dark-bg-color;
-  color: #eee;
+  color: #F4F4F4;
 }
 
 @media #{$large-and-up} {
@@ -72,7 +72,7 @@ i {
 
 .google-map {
   width: 100%;
-  color: #444;
+  color: #373737;
 }
 
 .no-gutter {
@@ -127,7 +127,7 @@ p {
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.8rem;
-  color: rgba(255,255,255,.8);
+  color: #F4F4F4;
 
   &.caption {
     color: inherit;
@@ -181,7 +181,7 @@ nav.navbar ul.dropdown-content li,
       transform: scaleY(1);
     }
 
-    color: #444;
+    color: #373737;
     padding-left: 0;
     padding-right: 0;
     transition: color .2s;
@@ -193,7 +193,7 @@ nav.navbar ul.dropdown-content li,
 
 /**** SIDENAV ****/
 .sidenav {
-  background-color: #111;
+  background-color: #373737;
 
   li {
     &.active > a,
@@ -213,7 +213,7 @@ nav.navbar ul.dropdown-content li,
       }
 
       position: relative;
-      color: #eee;
+      color: #F4F4F4;
       font-weight: 300;
       padding: 0 16px;
     }
@@ -229,7 +229,7 @@ nav.navbar ul.dropdown-content li,
 nav.navbar {
 
   &.pinned {
-    background-color: rgba(0,0,0,.3);
+    background-color: #373737;
   }
 
   &.absolute {
@@ -240,14 +240,14 @@ nav.navbar {
 
   &.dark {
     a {
-      color: #444;
+      color: #373737;
     }
 
-    .brand-logo i { color: #444; }
+    .brand-logo i { color: #373737; }
     ul.dropdown-content li > a::before,
     ul.dropdown-content li > span::before,
     a::before {
-      background-color: #444;
+      background-color: #373737;
     }
   }
 
@@ -256,12 +256,12 @@ nav.navbar {
       background-color: darken($primary-color, 15%);
 
       :not(.dropdown-content) > li > a {
-        color: #fff
+        color: #F4F4F4
       }
 
-      .brand-logo i { color: #fff; }
+      .brand-logo i { color: #F4F4F4; }
       a::before {
-        background-color: #fff;
+        background-color: #F4F4F4;
       }
       ul.dropdown-content li > a::before,
       ul.dropdown-content li > span::before {
@@ -270,7 +270,7 @@ nav.navbar {
     }
 
     @extend .dark;
-    background-color: #fff;
+    background-color: #F4F4F4;
   }
 
   z-index: 10;
@@ -342,7 +342,7 @@ nav.navbar {
 
     .tagline {
       display: block;
-      color: #fff;
+      color: #F4F4F4;
       font-size: 1.5rem;
       font-weight: 200;
     }
@@ -366,7 +366,7 @@ nav.navbar {
   position: relative;
   overflow: hidden;
   height: 100%;
-  background-color: #fff;
+  background-color: #F4F4F4;
 
   .header-wrapper {
     .valign-wrapper {
@@ -456,10 +456,10 @@ nav.navbar {
 /**** SECTION ****/
 .section {
   &.white {
-    color: #444;
+    color: #F4F4F4;
 
     h1, h2, h3, h4, h5 {
-      color: #444;
+      color: #373737;
     }
   }
 
@@ -468,7 +468,7 @@ nav.navbar {
     background-color: $section-light-bg-color;
 
     h1, h2, h3, h4, h5 {
-      color: #fff;
+      color: #F4F4F4;
     }
   }
 
@@ -484,7 +484,7 @@ nav.navbar {
   padding: 64px 0;
   height: 100%;
   overflow: hidden;
-  background-color: #000;
+  background-color: #373737;
   z-index: 3;
 
   .section-title {
@@ -510,7 +510,7 @@ nav.navbar {
     left: 0;
     width: calc(100% + 40px);
     height: 100%;
-    background-color: #eee;
+    background-color: #F4F4F4;
     transform: skewX(-45deg) translateX(calc(-100% - 20px));
     transition: transform .2s;
     z-index: -1;
@@ -522,34 +522,34 @@ nav.navbar {
     }
 
     box-shadow: none;
-    background-color: #eee;
-    color: #444;
+    background-color: #F4F4F4;
+    color: #373737;
 
     i {
-      color: #444;
+      color: #373737;
     }
   }
 
   &.dark {
     &::before {
-      background-color: #444;
+      background-color: #373737;
     }
     &:hover {
-      background-color: #444;
-      color: #fff;
+      background-color: #373737;
+      color: #F4F4F4;
 
       i {
-        color: #fff;
+        color: #F4F4F4;
       }
     }
     &:focus {
-      background-color: rgba(0,0,0,.1);
+      background-color: #373737;
     }
-    border-color: #444;
-    color: #444;
+    border-color: #373737;
+    color: #373737;
 
     i {
-      color: #444;
+      color: #373737;
     }
   }
 
